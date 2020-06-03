@@ -14,7 +14,7 @@ class UserForm(forms.ModelForm):
         Attributes:
             password (str): The password for the User (to be hashed and stored)
     """
-    password = forms.Charfield(widget=forms.PasswordInput())
+    password = forms.CharField(widget=forms.PasswordInput())
 
     class Meta():
         """

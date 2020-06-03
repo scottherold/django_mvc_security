@@ -7,5 +7,6 @@ app_name = 'basic_app'
 
 # interapp routing
 urlpatterns = [
+    path('', views.index, name="index"),
     path('register', views.register, name="register")
 ]
